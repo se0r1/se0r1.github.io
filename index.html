@@ -3,89 +3,125 @@
     <head>
         <meta charset="utf-8">
         <style>
-            table, tr, th, td {
-	border: solid 1px black;
-	border-collapse: collapse;
-	padding: 8px;
-}
-        p {
-            font-weight: bold;
-            font-size: 30px;
-        }
+            * {padding: 0; margin: 0;}
+
+            .clear {clear: both;}
+            .color1 {background-color: #e8a39b;}
+            .color2 { background-color: #f0c1bc;}            
+            .color3 { background-color: #f6d4cb;}
+            .color4 {background-color: #fbe9e6;}
+            .color5 {background-color: #e8ced5;}
+            .color6 {background-color: #e3a0b6;}
+            .color7 {background-color: #eccdd9;}
+            .dcdc {padding-left: 200px;}
+            .fff {text-align: center; font-family: '카페24 써라운드 에어'; background-color: white; font-size: 20px; 
+                 width: 300px; height: 80px; padding-top: 10px; margin-left: 150px;}
+
+            body {background-color: #ffdadc;}
+
+            header {width: 1465px; height: 100px; margin-top:10px;}
+            nav {width: 1465px; height: 30px; margin-top: 20px; padding-top: 10px;
+                font-size: 20px; text-align: center; background-color: #ffb6b9;
+                font-family: '카페24 써라운드 에어';}
+            Section {float: left; margin-left: 50px; margin-top: 10px;}
+            aside {float: left; margin-top: 10px; margin-left: 70px; background-image: url(img/딸기.jpg); width: 600px; height: 700px;}
+            footer {width: 995px; margin-top: 50px;}
+
+            table, tr, th, td {border: solid 2px black; border-collapse: collapse; padding: 15px;
+                               font-family: '카페24 써라운드 에어'; background-color: white; font-size: 14px;}
+            td {text-align: center;}
+            th {width: 80px; height: 40px;}
+
+            #logo {padding-top: 20px; text-align: center; font-family: '창원단감아삭';
+                font-size: 50px; color: #ff7a7f; text-shadow: 5px 3px 2px white;}
+            #pets {font-family: '롯데리아 촵땡겨체'; font-size: 30px; color: #ff6287; text-shadow: 3px 2px 2px #ff2155;
+                   text-align: center;}
+
+            #hoseo {float: left; margin: 20px;}
+            #infor {float: left; margin: 20px; font-family: '카페24 써라운드 에어';}
+
+            a {text-decoration-line: none;}
+            a:link {color: black;}
+            a:visited {color: black;}
+            a:hover {color: white;}
+
         </style>
-     <script>
-                function subblue() {
-                   e = document.getElementById('test')
-                   e.style.color = 'pink' ;
-                }
-    </script>
-    </head>
     <body>
-        <h3>
-            환영합니다! 20220350 서유리의 홈페이지입니다. 반갑습니다.
-        </h3>
-        <h3>2023년 1학기 시간표</h3>
-        <table>
-            <tr>
-                <th>시간/요일</th><th>월요일</th><th>화요일</th><th>수요일</th><th>목요일</th><th>금요일</th>
-            </tr>
-            <tr>
-                <th>1교시</th><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-                <th>2교시</th><td></td><td></td><td></td><td>디지털콘텐츠비즈니스</td><td rowspan="2">웹프로그래밍</td>
-            </tr>
-            <tr>
-                <th>3교시</th><td></td><td rowspan="2">디지털콘텐츠비즈니스개론</td><td></td><td rowspan="2">대학영어회화2</td>
-            </tr>
-            <tr>
-                <th>4교시</th><td></td><td></td><td></td>
-            </tr>
-            <tr>
-                <th>5교시</th><td></td><td rowspan="2">경영정보시스템</td><td>경영정보시스템</td><td rowspan="2">노인복지벤처</td><td rowspan="3">AI시대의인간과사회</td>
-            </tr>
-            <tr>
-                <th>6교시</th><td></td><td></td>
-            </tr>
-            <tr>
-                <th>7교시</th><td></td><td></td><td rowspan="2">리더십</td><td></td>
-            </tr>
-            <tr>
-                <th>8교시</th><td></td><td></td><td></td><td></td>
-            </tr>	
-            <tr>
-                <th>9교시</th><td></td><td></td><td></td><td></td><td></td>
-            </tr>	
-            <tr>
-                <th>10교시</th><td></td><td></td><td></td><td></td><td></td>
-            </tr>	
-            <tr>
-                <th>11교시</th><td></td><td></td><td></td><td></td><td></td>
-            </tr>	
-            <tr>
-                <th>12교시</th><td></td><td></td><td></td><td></td><td>웹프로그래밍</td>
-            </tr>
-        </table>
-        <br>
-       <h3><a href="회원가입.html">[회원가입]</a></h3>
-       <h3><a href="rubato.html">[루바토 펜션 안내]</a></h3>
-       <h3><a href="호서국제기타페스티벌.html">[행사안내]</a></h3>
-       <h3><a href="안내화면.html">[호서 야간개장 페이지]</a></h3>
-       <h3><a href="세일안내장.html">[세일 안내장]</a></h3>
-       <h3><a href="월간일정표.html">[월간 일정표]</a></h3>
-       <h3><a href="판매목록화면.html">[판매목록]</a></h3>
-       
-       <hr>
-       <img id="cat" src="img/아비시니안.jpg" width='150px'>
-       <button onclick="document.getElementById('cat').src='img/어른아비시니안.jpg'">
-        어른고양이</button>
-       <button onclick="document.getElementById('cat').src='img/아비시니안.jpg'">
-        다시아기고양이</button>
-        <br>
-       <img onmouseout="this.style.width='150px'"
-    onmouseover="this.style.width='200px'" 
-    img src="img/너구리.jpg" width="150px">
-    <p id="test">검은 머리에서 분홍 머리로</p>
-    <button onclick="subblue()" type="button">염색</button>
+        <header>
+            <div id="logo">
+                강화유리 아니고 서유리
+            </div>
+        </header>
+        <nav>
+            <a href="rubato.html">루바토 펜션 안내</a>
+            ㅣ
+            <a href="호서국제기타페스티벌.html">페스티벌 안내</a>
+            ㅣ
+            <a href="안내화면.html">야간개장 안내</a>
+            ㅣ
+            <a href="세일 안내장.html">세일 안내장</a>
+            ㅣ
+            <a href="월간 일정표.html">월간 일정표</a>
+            ㅣ
+            <a href="판매목록화면.html">판매 목록</a>
+        </nav>
+        <section>
+            <table>
+                <tr>
+                    <th>시간/요일</th><th>월요일</th><th>화요일</th><th>수요일</th><th>목요일</th><th>금요일</th>
+                </tr>
+                <tr>
+                    <th>1교시</th><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>2교시</th><td></td><td></td><td></td><td class="color1">디지털콘텐츠비즈니스개론</td><td rowspan="2" class="color2">웹프로그래밍</td>
+                </tr>
+                <tr>
+                    <th>3교시</th><td></td><td rowspan="2" class="color1">디지털콘텐츠비즈니스개론</td><td></td><td rowspan="2" class="color3">대학영어회화2</td>
+                </tr>
+                <tr>
+                    <th>4교시</th><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>5교시</th><td></td><td rowspan="2" class="color4">경영정보시스템</td><td class="color4">경영정보시스템</td><td rowspan="2" class="color5">노인복지벤처</td><td rowspan="3" class="color6">AI시대의인간과사회</td>
+                </tr>
+                <tr>
+                    <th>6교시</th><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>7교시</th><td></td><td></td><td rowspan="2" class="color7">리더십</td><td></td>
+                </tr>
+                <tr>
+                    <th>8교시</th><td></td><td></td><td></td><td></td>
+                </tr>
+            </table>
+        </section>
+        <aside>
+            <div id="pets">My lovely Pets</div>
+            <div>
+                <a href="프로필.html"><span class="dcdc"><img src="img/dog.jpg" width="200px" height="200px"></span></a>
+                <p class="fff"> 초코 12살 남자아이<br>
+                    요크셔테리어<br>
+                    애교 많음
+                </p>
+            </div>
+            <br>
+            <div>
+                <a href="프로필.html"><span class="dcdc"><img src="img/cat.jpg" width="200px" height="200px"></span></a>
+                <p class="fff"> 우주 11개월 남자아이<br>
+                    아비시니안<br>
+                    자기 주장 강함
+                </p>
+            </div>
+        </aside>
+        <footer>
+            <div id="hoseo">
+                <img src="img/hoseo.png" width="50px" height="50px">
+            </div>
+            <div id="infor">
+                <p>디지털기술경영학과 20220350 서유리</p>
+                <p>인스타그램: @se0r1___</p>
+            </div>
+        </footer>
     </body>
 </html>
