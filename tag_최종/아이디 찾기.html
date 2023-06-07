@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TAG | 신발 커스텀과 펀딩</title>
+<meta charset='utf-8'>
+<style>
+	*{font-family:'Pretendard-Regular';}
+    #page {margin: 0 auto; width: 1300px;}
+    .clear {clear: both;}
+	@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;}
+	@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+a:visited {text-decoration: none; color: black;}
+a:hover {text-decoration: none; color: black;} 
+a:link {text-decoration: none; color:black;}
+
+#header {float: left;}
+#login {float: right;
+		font-size: 15px;}
+
+.sidebar {
+            height: 100%;
+            width: 0px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #e4e4e4;
+            overflow-x: hidden;
+            transition: 0.3s;/*펼침속도*/
+            padding-top: 60px;
+            }
+
+            .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            display: block;
+			background-color: #e4e4e4;
+            transition: 0.3s;
+            }
+
+            /*메뉴열기 hover 시*/
+            .sidebar a:hover {
+            color: #a6a6a6;
+            }
+
+            .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            }
+
+			.openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #ffffff;
+			border: none;
+		}
+		
+		#second #outer {
+			display: inline-block;
+			width: 140px; height: 30px;
+			border: solid 1px #cccccc;
+			padding: 5px;
+			border-radius: 20px;
+			position: absolute;
+			left: 80%; bottom: 83%;
+			background: #f0f0f0;
+		}
+
+		input#search {
+			width: 100px;
+			height: 20px;
+			border: none;
+			outline: none;
+			background: #f0f0f0;
+		}
+
+		.gray {color: gray;
+		font-size: 14px;}
+		.dark {color:rgb(119, 119, 119);
+		font-size: 14px;}
+		footer {float: left;}
+		#footer li {
+			list-style-type: none;
+		}
+		p {background-color: black;
+		text-align: center; color: white;
+		padding:5px 4px 5px 4px;
+		width: 105px; height: 18px;
+		font-size: 14px;}
+		section {float:left; font-family: 'Y_Spotlight';
+				border: solid 2px black;
+				width: 616px; height: 300px;
+			padding-left: 30px;
+			padding-top: 30px;}
+		#s1 {font-family: 'Y_Spotlight'; float: left; margin: 0 auto;
+			color: white; font-size: 25px;}
+		#ss1 {background-color: black;}
+		#ss2 {background-color: white;}
+		#s2 {font-family: 'Y_Spotlight'; float: left; margin: 0 auto;
+			font-size: 25px;}
+		#top3 {font-family: 'Y_Spotlight'; float: left; background-color: aqua; width: 1289px; height: 40px;
+				font-size: 25px; padding-left: 10px;
+			  color: white; text-shadow: 2px 2px 2px gray;}
+		#개인 {font-family: 'Y_Spotlight'; font-size: 20px;
+				border: solid 2px white;
+				padding: 5px 9px 5px 9px;}
+		#펀딩 {font-family: 'Y_Spotlight'; font-size: 20px;
+				border: solid 2px black;
+				padding: 5px 9px 5px 9px;}
+		#사 {float: left; padding-left: 120px; color: white; font-size: 25px;}
+		#펀 {float: left; padding-left: 120px; color: black; font-size: 25px;}
+		#p1 {float:left; border: solid 1px black; width: 426px; height: 180px;
+			padding-left: 5px;
+			padding-top: 5px;}
+		#p2 {float:left; border: solid 1px black; width: 426px; height: 180px;
+			padding-left: 5px;
+			padding-top: 5px;}
+		#p3 {float:left; border: solid 1px black; width: 426px; height: 180px;
+			padding-left: 5px;
+			padding-top: 5px;}
+		.blue {color: blue; font-weight: bold;}
+		#f1, #f2, #f3 {float: left;}
+		span {padding-left: 5px;}
+		#d1, #d2, #d3 {float: right; padding-top: 50px; padding-right: 10px;}
+        .clear {clear: both;}
+		.정렬 {text-align: center;}
+		.text {text-align: center; border-bottom: 2px solid #b1b1b1; position: relative; width: 350px; margin-left: 500px;}
+		input[type='id']{width: 350px; height: 30px;}
+		input[type='name']{width: 350px; height: 30px;}
+		input[type='email']{width: 350px; height: 30px;}
+		.text input{font-size: 15px; color: #333; border: none; 
+                    outline: none; background: none; padding: 0 5px; height: 30px; text-align: left;}
+		.logbtn{display: block; width: 350px; height: 50px; text-align: center; border: solid 1px white; border-radius: 10px; 
+			    background: linear-gradient(120deg,#34dbc2,#44ada1,#84e8e6); font-size: 15px; margin-left: 500px;
+                background-size: 200%; color: #fff; outline: none; cursor: pointer; transition: .5s;}
+		.logbtn:hover {background-position: right;}
+		.login_find {list-style-type: none; display: inline;}
+</style>
+<script>
+	function openMenu() {
+                document.getElementById("main").style.marginLeft = "250px";
+                document.querySelector('.sidebar').style.width = "250px";
+                document.querySelector('.openbtn').style.display = 'none';
+            }
+
+            function closeMenu() { 
+                document.getElementById("main").style.marginLeft= "0";
+                document.querySelector('.sidebar').style.width = "0";
+                document.querySelector('.openbtn').style.display = 'block';
+            }
+	const btn = document.querySelector(".btn");
+	const input = document.querySelector(".input");
+	const menu = document.getElementsByClassName('menu')[0]
+	function fncContChk(obj)
+{
+    var ptn = /[^A-z|0-9|\ |\r\n]/g;
+
+    if(obj.value.match(ptn))
+    {
+        alert('특수문자를 사용할 수 없습니다.');
+        obj.value = obj.value.replace(ptn,'');
+    }
+}
+</script>
+</head>
+<body>
+<form action="tag_main.html" class="login-form">
+<div id="page">
+<header>
+	<div id="header">
+		<a href="tag_main.html">
+		<img src="tag_logo.png" width="160px;"></a>
+	</div>
+	<div id="login">
+		<a href="로그인.html"> 로그인</a> / <a href="회원가입.html"> 회원가입</a> <img src="사람.png" width="20px";>
+		<div id="outer">
+			<input type="text" id="search" name="search">
+			<img src="ss.png" width="15px" valign="middle" style="float: right";>
+		</div>
+	</div>
+</header>
+<nav class="clear">
+	<div class="sidebar">
+		<a class="closebtn" onclick="closeMenu()">×</a>
+		<a href="개인커스텀-전체.html">개인</a>&nbsp;
+		<a href="펀딩 (1) .html">펀딩</a>&nbsp;
+		<a href="펀딩 (1) .html">진행 중인 펀딩</a>&nbsp;
+		<a href="펀딩(2).html">오픈 예정 펀딩</a>&nbsp;
+		<a href="펀딩(3).html">펀딩 문의</a>
+	</div>
+	<div id="main">
+		<button class="openbtn" onclick="openMenu()">
+		☰</button></div>
+</nav>
+<div class="text">
+	<img src="tag_logo.png" style="padding-left: 50px;">
+    <h2>아이디 찾기</h2>
+    <label for="name">이름</label>
+		<div>
+		<input type="name" required>
+		</div>
+</div>
+<br>
+<div class="text">
+	<label for="email">이메일</label>
+		<div>
+			<input type="email" placeholder="예) tag2223@iwantag.com" required>
+		</div>
+</div>
+<br>
+<input type="submit" onclick="alert('이메일을 확인해 주세요')" class="logbtn" value="이메일로 받아보기">
+	<ul class="정렬">
+		<li class="login_find"><a href="로그인.html" class="look_link" data-v-677160c2> 로그인 ㅣ </a></li>
+		<li class="login_find"><a href="회원가입.html" class="look_link" data-v-677160c2> 회원가입 ㅣ </a></li>
+		<li class="login_find"><a href="비밀번호 찾기.html" class="look_link" data-v-677160c2> 비밀번호 찾기 </a></li>
+	</ul>
+<div class="clear"></div>
+<footer>
+	<div>
+	<ul id="footer">
+		<li>고객센터 041-540-5114</li>
+		<li class="gray">운영시간 평일 11:30 - 18:00 (토·일, 공휴일 휴무)</li>
+		<li class="gray">점심시간 평일 13:00 - 14:00</li>
+		<li class="dark">COPYRIGHT (C) TAG ALL RIGHTS RESERVED</li>
+	</ul>
+	</div>
+</footer>
+</div>
+</form>
+</body>
+</html>

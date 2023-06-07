@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TAG | 신발 커스텀과 펀딩</title>
+<meta charset='utf-8'>
+<style>
+	*{font-family:'Pretendard-Regular';}
+    #page {margin: 0 auto; width: 1300px;}
+    .clear {clear: both;}
+	@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;}
+	@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+a:visited {text-decoration: none; color: black;}
+a:hover {text-decoration: none; color: black;} 
+a:link {text-decoration: none; color:black;}
+
+#header {float: left;}
+#login {float: right;
+		font-size: 15px;}
+
+.sidebar {
+            height: 100%;
+            width: 0px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #e4e4e4;
+            overflow-x: hidden;
+            transition: 0.3s;/*펼침속도*/
+            padding-top: 60px;
+            }
+
+            .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            display: block;
+			background-color: #e4e4e4;
+            transition: 0.3s;
+            }
+
+            /*메뉴열기 hover 시*/
+            .sidebar a:hover {
+            color: #a6a6a6;
+            }
+
+            .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            }
+
+			.openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #ffffff;
+			border: none;
+		}
+		
+		#second #outer {
+			display: inline-block;
+			width: 140px; height: 30px;
+			border: solid 1px #cccccc;
+			padding: 5px;
+			border-radius: 20px;
+			position: absolute;
+			left: 80%; bottom: 83%;
+			background: #f0f0f0;
+		}
+
+		input#search {
+			width: 100px;
+			height: 20px;
+			border: none;
+			outline: none;
+			background: #f0f0f0;
+		}
+
+		.gray {color: gray;
+		font-size: 14px;}
+		.dark {color:rgb(119, 119, 119);
+		font-size: 14px;}
+		footer {float: left;}
+		#footer li {
+			list-style-type: none;
+		}
+		p {background-color: black;
+		text-align: center; color: white;
+		padding:5px 4px 5px 4px;
+		width: 105px; height: 18px;
+		font-size: 14px;}
+		section {float:left; font-family: 'Y_Spotlight';
+				border: solid 2px black;
+				width: 616px; height: 300px;
+			padding-left: 30px;
+			padding-top: 30px;}
+		#s1 {font-family: 'Y_Spotlight'; float: left; margin: 0 auto;
+			color: white; font-size: 25px;}
+		#ss1 {background-color: black;}
+		#ss2 {background-color: white;}
+		#s2 {font-family: 'Y_Spotlight'; float: left; margin: 0 auto;
+			font-size: 25px;}
+		#top3 {font-family: 'Y_Spotlight'; float: left; background-color: aqua; width: 1289px; height: 40px;
+				font-size: 25px; padding-left: 10px;
+			  color: white; text-shadow: 2px 2px 2px gray;}
+		#개인 {font-family: 'Y_Spotlight'; font-size: 20px;
+				border: solid 2px white;
+				padding: 5px 9px 5px 9px; color: white;}
+		#펀딩 {font-family: 'Y_Spotlight'; font-size: 20px;
+				border: solid 2px black;
+				padding: 5px 9px 5px 9px;}
+		#사 {float: left; padding-left: 120px; color: white; font-size: 25px;}
+		#펀 {float: left; padding-left: 120px; color: black; font-size: 25px;}
+		#p1 {float:left; border: solid 1px black; width: 426px; height: 180px;
+			padding-left: 5px;
+			padding-top: 5px;}
+		#p2 {float:left; border: solid 1px black; width: 426px; height: 180px;
+			padding-left: 5px;
+			padding-top: 5px;}
+		#p3 {float:left; border: solid 1px black; width: 426px; height: 180px;
+			padding-left: 5px;
+			padding-top: 5px;}
+		.blue {color: blue; font-weight: bold;}
+		#f1, #f2, #f3 {float: left;}
+		span {padding-left: 5px;}
+		#d1, #d2, #d3 {float: right; padding-top: 50px; padding-right: 10px;}
+</style>
+<script>
+	function openMenu() {
+                document.getElementById("main").style.marginLeft = "250px";
+                document.querySelector('.sidebar').style.width = "250px";
+                document.querySelector('.openbtn').style.display = 'none';
+            }
+
+            function closeMenu() { 
+                document.getElementById("main").style.marginLeft= "0";
+                document.querySelector('.sidebar').style.width = "0";
+                document.querySelector('.openbtn').style.display = 'block';
+            }
+	const btn = document.querySelector(".btn");
+	const input = document.querySelector(".input");
+	const menu = document.getElementsByClassName('menu')[0]
+</script>
+</head>
+<body>
+<div id="page">
+<header>
+	<div id="header">
+		<a href="tag_main.html">
+		<img src="tag_logo.png" width="160px;"></a>
+	</div>
+	<div id="login">
+		<a href="로그인.html"> 로그인</a> / <a href="회원가입.html"> 회원가입</a> <img src="사람.png" width="20px";>
+		<div id="outer">
+			<input type="text" id="search" name="search">
+			<img src="ss.png" width="15px" valign="middle" style="float: right";>
+		</div>
+	</div>
+</header>
+<nav class="clear">
+	<div class="sidebar">
+		<a class="closebtn" onclick="closeMenu()">×</a>
+		<a href="개인커스텀-전체.html">개인</a>&nbsp;
+		<a href="펀딩 (1) .html">펀딩</a>&nbsp;
+		<a href="펀딩 (1) .html">진행 중인 펀딩</a>&nbsp;
+		<a href="펀딩(2).html">오픈 예정 펀딩</a>&nbsp;
+		<a href="펀딩(3).html">펀딩 문의</a>
+	</div>
+	<div id="main">
+		<button class="openbtn" onclick="openMenu()">
+		☰</button></div>
+</nav>
+<section id="ss1">
+	<div id="s1">
+		개인<br>CUSTOM<br>
+	</div>
+	<div id="사">
+		<a href="개인커스텀-전체.html">
+		<img src="신발.png" width="340px";><br>
+		<a href="개인커스텀-전체.html"> <span id="개인">지금 거래하기 &gt</span></a></a> 
+	</div>
+</section>
+<section id="ss2">
+	<div id="s2">
+		CUSTOM<br>펀딩<br>
+	</div>
+	<div id="펀">
+		<a href="펀딩 (1) .html">
+		<img src="펀딩.png" width="340px";><br>
+	<a href="펀딩 (1) .html">	<span id="펀딩">지금 펀딩하기 &gt</span></a></a>
+	</div>
+</section>
+<aside>
+	<div id="top3">
+		top 3 <img src="winner.png" width="25px";>project
+	</div>
+	<div id="p1">
+		<div id="f1">
+			<img src="신발1.png" width="200px"; onclick="alert('판매 종료된 상품입니다.')">
+		</div>
+		<div><span class="blue" onclick="alert('판매 종료된 상품입니다.')">Mihara Yasuhiro</span><br>
+			<span onclick="alert('판매 종료된 상품입니다.')">Maison Mihara Yasuhiro Peterson OG Sole Canvas Low Sneakers
+			메종 미하라 야스히로 피터슨 OG 솔 캔버스 로우 스니커즈</span></div>
+		<div id="d1" onclick="alert('판매 종료된 상품입니다.')">362,000원</div>
+		</div>
+		
+	<div id="p2">
+		<div id="f2">
+			<img src="신발2.png" width="200px"; onclick="alert('판매 종료된 상품입니다.')">
+		</div>
+		<div><span class="blue" onclick="alert('판매 종료된 상품입니다.')">Nike</span><br>
+			<span onclick="alert('판매 종료된 상품입니다.')">Nike x Peaceminusone Air Force 1 Low Para-Noise 2.0
+				나이키 x 피스마이너스원 에어포스 1 로우 파라노이즈 2.0</span></div>
+		<div id="d2" onclick="alert('판매 종료된 상품입니다.')">775,000원</div>
+		</div>
+		
+	<div id="p3">
+		<div id="f3">
+			<img src="신발3.png" width="200px"; onclick="alert('판매 종료된 상품입니다.')">
+		</div>
+		<div><span class="blue" onclick="alert('판매 종료된 상품입니다.')">Converse</span><br>
+			<span onclick="alert('판매 종료된 상품입니다.')">Converse x Ader Error Chuck 70 High White
+				컨버스 x 아더에러 척 70 하이 화이트</span></div><br>
+		<div id="d3" onclick="alert('판매 종료된 상품입니다.')">392,000원</div>
+		</div>
+		
+</aside>
+<footer>
+	<div>
+	<ul id="footer">
+		<li>고객센터 041-540-5114</li>
+		<li class="gray">운영시간 평일 11:30 - 18:00 (토·일, 공휴일 휴무)</li>
+		<li class="gray">점심시간 평일 13:00 - 14:00</li>
+		<li class="dark">COPYRIGHT (C) TAG ALL RIGHTS RESERVED</li>
+	</ul>
+	</div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>개인 커스텀 신발 판매 페이지</title>
+    <meta charset="utf-8">
+    <style>
+    *{font-family:'Pretendard-Regular';}
+    #page {margin: 0 auto; width: 1300px;}
+    .clear {clear: both;}
+	@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;}
+	@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+header{
+    height: 62px;
+    margin-top: 10px;
+}
+
+nav{
+    height: 20px;
+    margin-top: 0px;
+    border-bottom: solid 2px black;
+    padding-bottom: 13px;
+    text-align: center;
+}
+
+section { border:solid 0px;
+        width: 1300px;
+        height: 300px;
+        margin-top: 10px;
+        margin-left: 100px;
+}
+.sidebar {
+            height: 100%;
+            width: 0px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #e4e4e4;
+            overflow-x: hidden;
+            transition: 0.3s;/*펼침속도*/
+            padding-top: 60px;
+            }
+
+            .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            display: block;
+			background-color: #e4e4e4;
+            transition: 0.3s;
+            }
+
+            /*메뉴열기 hover 시*/
+            .sidebar a:hover {
+            color: #a6a6a6;
+            }
+
+            .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            }
+
+			.openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #ffffff;
+			border: none;
+           
+		}
+        #second #outer {
+			display: inline-block;
+			width: 140px; height: 30px;
+			border: solid 1px #cccccc;
+			padding: 5px;
+			border-radius: 20px;
+			position: absolute;
+			left: 80%; bottom: 83%;
+			background: #f0f0f0;
+		}
+
+		input#search {
+			width: 100px;
+			height: 20px;
+			border: none;
+			outline: none;
+			background: #f0f0f0;
+		}
+
+		.gray {color: gray;
+		font-size: 14px;}
+		.dark {color:rgb(119, 119, 119);
+		font-size: 14px;}
+
+        span{text-decoration: underline;}
+
+
+
+
+        .slider{
+    width: 1300px;
+    height: 313px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden; /* 현재 슬라이드 오른쪽에 위치한 나머지 슬라이드 들이 보이지 않도록 가림 */
+}
+.slider input[type=radio]{
+    display: none;
+}
+
+
+ul.imgs{
+    padding: 0;
+    margin: 0;
+    list-style: none;    
+}
+ul.imgs li{
+    position: absolute;
+    left: 640px;
+    transition-delay: 1s; /* 새 슬라이드가 이동해 오는 동안 이전 슬라이드 이미지가 배경이 보이도록 지연 */
+
+    padding: 0;
+    margin: 0;
+}
+
+
+.bullets{
+    position: absolute;
+    left: 93.5%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 2;
+    
+}
+.bullets label{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.55);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+/* 현재 선택된 불릿 배경 검은색으로 구분 표시 */
+.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
+    background-color: black;
+}
+.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
+    background-color: black;
+}
+.slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
+    background-color: black;
+}
+
+
+
+.slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+
+a:visited {text-decoration: none; color: black;}
+a:hover {text-decoration: none; color: black;} 
+a:link {text-decoration: none; color:black;}
+
+#header {float: left;}
+#login {float: right;
+		font-size: 15px;}
+        .gray {color: gray;
+		font-size: 14px;}
+		.dark {color:rgb(119, 119, 119);
+		font-size: 14px;}
+		footer {float: left;}
+		#footer li {
+			list-style-type: none;
+		}
+        p {background-color: black;
+		text-align: center; color: white;
+		padding:5px 4px 5px 4px;
+		width: 105px; height: 18px;
+		font-size: 14px;}
+aside { 
+        text-align: center;
+        margin-top: 30px;
+        font-size: 30px;
+        font-weight: bold;
+}
+.나이키 {text-decoration: underline;}
+
+
+.신발3 {border:solid 1px;
+        width: 550px;
+        height: 300px;
+        margin-top: 100px;
+        float: left;
+        display: inline;
+        }
+
+.신발4 {border:solid 1px;
+        width: 550px;
+        height: 300px;
+        margin-top: 100px;
+        float: right;
+        display: inline;
+        }
+
+#p1 {border:solid 1px;
+        width: 550px;
+        height: 300px;
+        margin-top: 150px;
+        display: inline;
+        float: left;
+       
+    }
+#p2 {border:solid 1px;
+        width: 550px;
+        height: 300px;
+        margin-top: 150px;
+        float: right;
+        display: inline;
+}
+			
+#f1, #f2 {float: left;}
+#d1, #d2 {float: right; 
+            text-align: right;
+            padding-top: 150px; padding-right: 10px
+        }
+span {padding-left: 5px;
+    font-size: 25px;}
+.blue {color: blue; font-weight: bold;}
+hr {width: 1700px;
+    margin-top: 50px;}
+</style>
+<script>
+	function openMenu() {
+                document.getElementById("main").style.marginLeft = "250px";
+                document.querySelector('.sidebar').style.width = "250px";
+                document.querySelector('.openbtn').style.display = 'none';
+            }
+
+            function closeMenu() { 
+                document.getElementById("main").style.marginLeft= "0";
+                document.querySelector('.sidebar').style.width = "0";
+                document.querySelector('.openbtn').style.display = 'block';
+            }
+	const btn = document.querySelector(".btn");
+	const input = document.querySelector(".input");
+	const menu = document.getElementsByClassName('menu')[0]
+
+</script>
+
+</head>
+<body>
+    <div id="page">
+        <header>
+            <div id="header">
+                <a href="tag_main.html">
+                <img src="tag_logo.png" width="160px;"></a>
+            </div>
+            <div id="login">
+                <a href="로그인.html"> 로그인</a> / <a href="회원가입.html"> 회원가입</a> <img src="사람.png" width="20px";>
+                <div id="outer">
+                    <input type="text" id="search" name="search">
+                    <img src="ss.png" width="15px" valign="middle" style="float: right";>
+                </div>
+            </div>
+        </header>
+            
+                <div class="sidebar">
+                    <a class="closebtn" onclick="closeMenu()">×</a>
+                    <a href="개인커스텀-전체.html">개인</a>&nbsp;
+                    <a href="펀딩 (1) .html">펀딩</a>&nbsp;
+                    <a href="펀딩 (1) .html">진행 중인 펀딩</a>&nbsp;
+                    <a href="펀딩(2).html">오픈 예정 펀딩</a>&nbsp;
+                    <a href="펀딩(3).html">펀딩 문의</a>
+                </div>
+                <div id="main">
+                    <button class="openbtn" onclick="openMenu()">
+                    ☰</button></div> 
+
+                    <nav>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="개인커스텀-전체.html">전체</a> &nbsp; &nbsp;
+                    &nbsp; &nbsp;&nbsp;<b class="나이키">나이키</b> &nbsp; &nbsp;
+                     &nbsp; &nbsp;<a href="개인커스텀-컨버스.html">컨버스</a> &nbsp; &nbsp; &nbsp; &nbsp;<a href="개인커스텀-반스.html">반스</a>&nbsp; &nbsp;
+                     &nbsp; &nbsp;(오픈예정)  &nbsp; &nbsp; &nbsp; &nbsp;(오픈예정) &nbsp; &nbsp; &nbsp; &nbsp;(오픈예정)</div>      
+        </nav>
+        <section>
+            <div class="slider">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                
+                <ul id="imgholder" class="imgs">
+                    <li><img src="광고 1.png"></li>
+                    <li><img src="광고2.png"></li>
+                    <li><img src="광고 3.png"></li>
+                 
+                </ul>
+                <div class="bullets">
+                    <label for="slide1">&nbsp;</label>
+                    <label for="slide2">&nbsp;</label>
+                    <label for="slide3">&nbsp;</label>
+                </div>
+            </div>
+           
+        </section>
+
+<aside>
+<img src="나이키 로고.png" width="150">  
+<div id="p1" onclick="alert('판매 준비중인 상품입니다.')">
+    <div id="f1">
+        <img src="나이키 상품1.png" width="250px" height="300">
+    </div>
+    <div><span class="blue">나이키 에어포스 2D 그레이</span><br>
+        <span>[아티스트]<br>  미야MIYA커스텀</span></div>
+    <div id="d1">198,000원</div>
+    </div>
+    
+<div id="p2" onclick="alert('판매 준비중인 상품입니다.')">
+    <div id="f2">
+        <img src="나이키 상품2.png" width="250px" height="300">
+    </div>
+    <div><span class="blue">나이키 에어포스 스네이크</span><br>
+        <span>[아티스트]<br> PWB 커스텀</span></div>
+    <div id="d2">259,000원</div>
+    </div>
+</aside>
+<footer>
+	<div>
+    <hr>
+	<ul id="footer">
+		<li>고객센터 1588-7813</li>
+		<li class="gray">운영시간 평일 11:30 - 18:00 (토·일, 공휴일 휴무)</li>
+		<li class="gray">점심시간 평일 13:00 - 14:00</li>
+		<li class="dark">COPYRIGHT (C) TAG ALL RIGHTS RESERVED</li>
+	</ul>
+	</div>
+</footer>
+</body>
+</html>
