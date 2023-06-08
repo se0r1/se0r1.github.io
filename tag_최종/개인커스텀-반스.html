@@ -31,11 +31,10 @@ nav{
     text-align: center;
 }
 
-section { border:solid 0px;
-        width: 1300px;
-        height: 300px;
-        margin-top: 10px;
-        margin-left: 100px;
+section{
+    height: 1100px;
+    border: solid 0px black;
+    margin-top: 10px;
 }
 .sidebar {
             height: 100%;
@@ -78,7 +77,7 @@ section { border:solid 0px;
             cursor: pointer;
             background-color: #ffffff;
 			border: none;
-         
+          
 		}
         #second #outer {
 			display: inline-block;
@@ -201,7 +200,7 @@ a:link {text-decoration: none; color:black;}
 		padding:5px 4px 5px 4px;
 		width: 105px; height: 18px;
 		font-size: 14px;}
-.반스 {text-decoration: underline;}
+.컨버스 {text-decoration: underline;}
 aside { 
         text-align: center;
         margin-top: 30px;
@@ -244,17 +243,23 @@ aside {
 #d1 {
     float: right; 
             text-align: right;
-            padding-top: 115px; padding-right: 10px
+            padding-top: 150px; padding-right: 10px
 }
 #d2 {float: right; 
             text-align: right;
-            padding-top: 150px; padding-right: 10px
+            padding-top: 115px; padding-right: 10px
         }
 span {padding-left: 5px;
     font-size: 25px;}
 .blue {color: blue; font-weight: bold;}
 hr { width: 1700px;
-    margin-top: 50px;}
+    margin-top: 70px;}
+.aaa { border: solid 0px;
+        width: 1300px;
+        height: 300px;
+        margin: auto;
+        
+}
 </style>
 <script>
 	function openMenu() {
@@ -303,9 +308,10 @@ hr { width: 1700px;
                     <button class="openbtn" onclick="openMenu()">
                     ☰</button></div> 
 
-                    <nav>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="개인커스텀-전체.html">전체</a> &nbsp; &nbsp;ㅣ&nbsp;&nbsp;&nbsp;<a href="개인커스텀-나이키.html">나이키&nbsp; &nbsp;
-                         &nbsp; &nbsp;<a href="개인커스텀-컨버스.html">컨버스</a>&nbsp; &nbsp;  &nbsp; &nbsp;<b class="반스">반스</b> &nbsp; &nbsp;
-                     &nbsp; &nbsp;(오픈예정)  &nbsp; &nbsp; &nbsp; &nbsp;(오픈예정) &nbsp; &nbsp; &nbsp; &nbsp;(오픈예정)</div>      
+                    <nav>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="개인커스텀-전체.html">전체</a> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="개인커스텀-나이키.html">나이키</a>&nbsp; &nbsp; &nbsp; &nbsp;<b class="컨버스">컨버스</b> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href="개인커스텀-반스.html">반스</a>&nbsp; &nbsp; &nbsp; &nbsp;(오픈예정)  &nbsp; &nbsp; &nbsp; &nbsp;(오픈예정) &nbsp; &nbsp;
+                         &nbsp; &nbsp;(오픈예정)</div>      
         </nav>
         <section>
             <div class="slider">
@@ -325,31 +331,30 @@ hr { width: 1700px;
                     <label for="slide3">&nbsp;</label>
                 </div>
             </div>
-           
-        </section>
-<aside>
-    <img src="반스로고.png" width="150">
+    <div class="aaa">
+    <img src="컨버스로고.png" width="150">
     <div id="p1" onclick="alert('판매 준비중인 상품입니다.')">
         <div id="f1">
-            <img src="반스 상품 1.png" width="250px" height="300">
+            <img src="컨버스 상품 1.png" width="250px" height="300">
         </div>
-        <div><span class="blue">반스 올드스쿨<br>off white 페인팅</span><br>
-            <span>[아티스트]<br> 디어주</span></div>
-        <div id="d1">180,000원</div>
+        <div><span class="blue">컨버스 펑첸왕 커스텀 로우</span><br>
+            <span>[아티스트]<br>  FABLO</span></div>
+        <div id="d1">57,000원</div>
         </div>
         
     <div id="p2" onclick="alert('판매 준비중인 상품입니다.')">
         <div id="f2">
-            <img src="반스 상품 2.png" width="250px" height="300">
+            <img src="컨버스 상품 2.png" width="250px" height="300">
         </div>
-        <div><span class="blue">반스 올드스쿨 크롬하츠</span><br>
-            <span>[아티스트]<br>  PWB 커스텀</span></div>
-        <div id="d2">259,000원</div>
+        <div><span class="blue">컨버스 펑첸왕 척테일러1970s 올스타 </span><br>
+            <span>[아티스트]<br> ALONEGOSTRAIGHT</span></div>
+        <div id="d2">220,000원</div>
         </div>
-</aside>
+    </div>
+</section>
 <footer>
 	<div>
-        <hr>
+    <hr>
 	<ul id="footer">
 		<li>고객센터 041-540-5114</li>
 		<li class="gray">운영시간 평일 11:30 - 18:00 (토·일, 공휴일 휴무)</li>
@@ -362,4 +367,4 @@ hr { width: 1700px;
 
 </body>
 
-</html>
+</html>678
